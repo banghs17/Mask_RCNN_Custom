@@ -151,7 +151,7 @@ class NailsDataset(utils.Dataset):
             height, width = image.shape[:2]
 
             self.add_image(
-                "balloon",
+                "nails",
                 image_id=a['filename'],  # use file name as a unique image id
                 path=image_path,
                 width=width, height=height,
@@ -311,7 +311,7 @@ if __name__ == '__main__':
                         help="'train' or 'splash'")
     parser.add_argument('--dataset', required=False,
                         metavar="/path/to/nails/dataset/",
-                        help='Directory of the Balloon dataset')
+                        help='Directory of the nails dataset')
     parser.add_argument('--weights', required=True,
                         metavar="/path/to/weights.h5",
                         help="Path to weights .h5 file or 'coco'")
