@@ -206,12 +206,12 @@ def train(model):
     """Train the model."""
     # Training dataset.
     dataset_train = NailsDataset()
-    dataset_train.load_balloon(args.dataset, "train")
+    dataset_train.load_nails(args.dataset, "train")
     dataset_train.prepare()
 
     # Validation dataset
     dataset_val = NailsDataset()
-    dataset_val.load_balloon(args.dataset, "val")
+    dataset_val.load_nails(args.dataset, "val")
     dataset_val.prepare()
 
     # *** This training schedule is an example. Update to your needs ***
